@@ -2,7 +2,7 @@
 
 
 <img
-src=“API.jpeg”
+src=“./API.jpeg”
 raw=true
 alt=“Subject Pronouns”
 style=“margin-right: 10px;”
