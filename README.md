@@ -20,3 +20,13 @@
 4. create about page to know how to work home_controller.rb, def xxx end and add get 'home/about' in routes.rb
 
 5. add bootstrap start
+
+6. create header file 
+
+7. -add gem 'devise' 
+    <br>-rails generate devise:install
+    <br>-rails generate devise user 
+    <br>-rails generate devise admin 
+    <br>-rails db:migrate
+
+8. create navbar by Boostrap, create gateway to create new user ou admin
