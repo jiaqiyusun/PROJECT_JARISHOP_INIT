@@ -32,3 +32,5 @@
 8. create navbar by Boostrap, create gateway to create new user ou admin
 
 9. create navbar_item for signup
+
+10. rails g model person full_name:string phone:string nib:string city:integer dateOfBirth:date
