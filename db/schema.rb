@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(version: 2021_03_06_235459) do
 
   create_table "admins", force: :cascade do |t|
+    t.integer "person_id"
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
@@ -21,6 +22,7 @@ ActiveRecord::Schema.define(version: 2021_03_06_235459) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_admins_on_email", unique: true
+    t.index ["person_id"], name: "index_admins_on_person_id"
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
   end
 
@@ -35,6 +37,7 @@ ActiveRecord::Schema.define(version: 2021_03_06_235459) do
   end
 
   create_table "users", force: :cascade do |t|
+    t.integer "person_id"
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
@@ -43,6 +46,7 @@ ActiveRecord::Schema.define(version: 2021_03_06_235459) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["person_id"], name: "index_users_on_person_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
